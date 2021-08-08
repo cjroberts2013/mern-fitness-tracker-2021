@@ -1,6 +1,6 @@
 import './App.css';
 import Dashboard from './Components/Dashboard'
-
+require('dotenv').config();
 
 function App() {
   
