@@ -3,12 +3,11 @@ import axios from 'axios'
 
 export default function Activites() {
     const [activities, setActivites] = useState([])
-    const baseURL = process.env.BASEURL;
 
     const hook = () => {
         // console.log("Effect");
         axios
-            .get(baseURL + '/api/activities')
+            .get('https://sheltered-basin-86221.herokuapp.com/api/activities')
             .then(response => {
                 console.log(response.data)
             setActivites(response.data)
